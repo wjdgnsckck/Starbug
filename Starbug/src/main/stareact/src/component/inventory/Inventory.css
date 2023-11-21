@@ -1,0 +1,91 @@
+.inventoryWrap{             /* 재고 현황 전체 크기 css*/
+    background-color : #f9f9f9;
+    height : 760px;
+    margin : 0 !important;
+    width : 1560px;
+    border-radius : 15px;
+}
+.css-1omp2b7.Mui-selected{
+    background-color : #9a8c81 !important;
+}
+.pageComment{
+    border-left : 10px solid #6b503f;
+    font-size : 23px; height : 30px;
+    font-weight : 700; margin-left : 20px; padding-left : 10px;
+}
+.inventoryTop{                  /*재고 현황 상단 css*/
+    background-color : #f9f9f9;
+    display : flex;
+    width : 100% ;
+    justify-content : space-between;
+    align-items: center;
+    border-top-right-radius : 15px;
+}
+.inventoryTopRight{
+ display : flex;
+ align-items : center;
+ margin-right : 10px;
+}
+.selectComment{                         /*재고 현황 상단 resoures view count css*/
+        font-size: 20px;
+        font-style: oblique;
+        font-weight: bold;
+        color: #9a8c81;
+}
+.inventoryTop select{               /*재고 현황 상단 selectbox */
+    height : 40px; width : 60px ;
+    margin : 10px;
+    border : none ; border-radius:15px;
+    text-align : center ; background-color : #9a8c81 ;
+    color : white;
+}
+
+.css-1gzy9y4{           /* mui 테이블 왼쪽 선 맨위*/
+    border-left :1px solid rgb(224,224,224);
+    border-radius : 5px;
+    background-color: #9a8c81;
+    color:white !important;
+}
+.css-1a4b21o{           /* mui 테이블 왼쪽 선 증긴*/
+    border-left :1px solid rgb(224,224,224);
+}
+.css-16nxph9:last-child td {/*mui 테이블 왼쪽 선 맨아래*/
+     border-left :1px solid rgb(224,224,224) !important;
+}
+.table{
+    width : 1520px !important;
+
+}
+
+.pagewrap{
+    margin : 0 auto;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    margin: 31px 0px;
+}
+.search{
+    text-align: right;
+    margin : -70px 20px;
+}
+.search button{
+    background-color: #9a8c81;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        width: 120px;
+        height: 40px;
+        border: none;
+        border-radius: 15px;
+        margin : 0px 25px;
+}
+.search input {
+    border: 1px solid #9a8c81;
+    border-radius: 15px;
+    height: 40px;
+}
+.excelImgs{
+    margin-right : 10px;
+}

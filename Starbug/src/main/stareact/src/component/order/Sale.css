@@ -1,0 +1,226 @@
+
+
+/* H3*/
+.saleH3{
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-size: 23px; font-weight: bold;
+    border-left: 10px solid #6B503F;
+    height: 30px;
+}
+/* 총 출력과 상세 출력을 나누는 DIV*/
+.salepadding{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* 매입매출 카테고리 구역*/
+.saleCategoryBox{
+    display: flex;
+    width: 1580px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+/* 카테고리 버튼*/
+.saleCategory{
+    width: 200px; height: 100px;
+    font-size: 32px;
+    background: #E6E6E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.saleCategory:hover{
+    background-color: #DBDBDB;
+    border-radius: 15px 15px 0 0;
+}
+/* 선택된 카테고리 버튼 */
+.selectSaleCategory{
+    background: #F9F9F9 !important;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 매입매출 컨텐츠 구역*/
+.saleContentBox{
+    margin: 0px !important;
+    padding-left: 20px;
+}
+.saleContainer{
+    display: flex;
+    background: #F9F9F9;
+    margin: 0px !important;
+    width: 1560px; height: 760px;
+
+}
+/* 엑셀 이미지 */
+.excelImgForsales{
+    box-shadow: 5px 5px 5px -3px gray;
+    width: 20px !important;
+}
+/* 주문 상세 정보 출력 구역 */
+.saleDetailsBox{
+    width: 440px;
+}
+.orderDetailsBox{
+    display: flex;
+    background-color: #FFFFFF;
+    box-shadow: -6px 7px 9px #e8e8e8;
+    width: 350px; height: 645px; margin : 20px;
+    border: solid #9A8C81 7px;
+    border-radius: 5px;
+    padding-left: 10px;
+    overflow-y: scroll;
+}
+
+.orderDetailsBox::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 조절 */
+}
+.orderDetailsBox::-webkit-scrollbar-track {
+  border-radius: 10px; /* 스크롤바의 테두리 조절 */
+}
+.orderDetailsBox::-webkit-scrollbar-thumb {
+  background-color: #9D9D9D; /* 스크롤바 색상을 원하는대로 설정 */
+  border-radius: 10px;
+}
+.orderDetailsBox::-webkit-scrollbar-button {
+  display: none; /* 스크롤바의 방향표시 버튼 숨김 */
+}
+
+.orderDetailsTitle{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #543F32;
+    line-height: 200%;
+}
+.orderDetailsContent{
+    padding: 20px;
+    font-size: 20px;
+    line-height: 200%;
+    color: #393939;
+}
+
+/* 매출 테이블 구역*/
+.saleMuiTableBox{
+    width: 1100px; height: 600px;
+}
+/* 환불 버튼 */
+.onCanclebtn{
+    margin: 0 auto;
+    border: 1px solid #9A8C81;
+    background-color: white;
+}
+
+.onCanclebtn:hover{
+    background-color: #9A8C81;
+    color: white;
+}
+
+/* 매입 테이블 구역*/
+.purchaseMuiTableBox_01, .purchaseMuiTableBox_02{
+    width: 740px; height: 600px;
+}
+
+
+/* 페이징과 검색 구역 */
+.PaginationAndSearchBox{
+    padding-top: 10px;
+    text-align: center;
+}
+.css-nhb8h9{
+    justify-content: center;
+}
+
+.css-1xr9krm.Mui-selected{
+    background-color : #9a8c81 !important;
+    color: white !important;
+    font-width: bold !important;
+}
+/* 검색관련 버튼*/
+.searchBtn{
+    background-color: #9A8C81;
+    border: 7px solid #9A8C81;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 0 10px;
+    color : white;
+    box-shadow: 4px 3px 8px #D0D0D2;
+}
+.OnSearchBtn{
+    height: 30px !important;
+    width: 100px !important;
+    font-size: 14px !important;
+}
+.searchBtn:hover{
+    border: 7px solid #94867A;
+    cursor: pointer;
+}
+
+/* 매입 페이지 테이블 구역 */
+.purchaseMuiTableBox{
+    display:flex;
+}
+.purchaseMuiTableBox_01{
+    margin-right: 20px;
+}
+
+.searchbox input{
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2.5px solid #94867A;
+    border-radius: 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+.searchbox select{
+    width: 130px;
+    height: 40px;
+    border: 2.5px solid #94867A;
+}
+
+/* 매입내역 발주와 급여 구역 둘다 같은 클래스명 */
+.purchaseBox0102{
+    /*margin: 상, 우, 하, 좌*/
+    margin: 20px 0px 0px 20px;
+}
+
+/* 차트 컨텐츠 전체 구역 */
+.chartContainer{
+    background: #F9F9F9;
+    margin: 0px !important;
+    width: 1560px; height: 760px;
+}
+
+/* 차트 출력날짜 선택 */
+.rechartsDateBox{
+    height: 40px; width: 500px;
+    padding-top: 30px;
+}
+.chartsDateInput{
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+    border: 2.5px solid #94867A;
+}
+
+/* 차트 구역 */
+.rechartsBox{
+    display : flex;
+}
+
+/* 차트 안에 헤더옆 설명 */
+.saleH3span{
+    font-size: 11px;
+    font-weight: 500;
+}

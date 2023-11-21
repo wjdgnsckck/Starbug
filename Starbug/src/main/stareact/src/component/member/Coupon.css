@@ -1,0 +1,74 @@
+
+
+.cccontent ,.ccpercent , .ccdate { /*input박스*/
+    width: 150px;
+    height : 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    margin-top:20px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.btnCouponSignup { /* 버튼 css */
+    width : 250px;
+    height : 40px;
+    background-color: #9A8C81;
+    border-radius : 15px;
+    color: white;
+    border : none;
+    cursor: pointer;
+    font-weight : bold;
+    font-size : 16px;
+    margin-top : 30px;
+    outline:none;
+}
+.btnCdelete { /* 쿠폰 삭제 버튼 */
+    width : 100px;
+    height : 40px;
+    background-color: #9A8C81;
+    border-radius : 15px;
+    color: white;
+    border : none;
+    cursor: pointer;
+}
+
+
+/* 카테고리 영역 */
+.couponContainer{
+    width: 1400px;
+    height : 40px;
+    margin-left : 20px;
+
+}
+.couponinsertArea{
+    width : 800px;
+    margin-left : 500px;
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/* 컨텐츠 영역 */
+.contentArea {
+    width: 1500px;
+    height : 750px;
+    border-radius : 15px;
+    border-top-left-radius: 0;
+    background-color : #F9F9F9;
+    margin-left: 20px;
+}
+.memberbtnArea{
+    width: 820px;
+    height : 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left : 520px;
+    padding-top : 30px;
+}
+
+
+
+

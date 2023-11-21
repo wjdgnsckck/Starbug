@@ -1,0 +1,84 @@
+.updateWrap{            /* 업데이트 전체*/
+  background-color : #f9f9f9;
+    height : 760px;
+    margin : 0 !important;
+    width : 1560px;
+    border-radius : 15px;
+}
+.updateTop{         /* 업데이트 상단*/
+    display:flex;
+    align-items: center;
+    height: 100px;
+}
+.updateTop p {
+    margin-left: 20px;
+    font-size : 25px;
+    color : #9a8c81;
+    font-weight :bold;
+    font-style : oblique;
+}
+.updateTop input {  /* 업데이트 상단 input*/
+   border: 1px solid #9a8c81;
+   border-radius: 15px;
+   height: 45px;
+   width : 200px;
+   font-size : 15px;
+   margin-left : 20px;
+
+}
+.resouresName{          /* 업데이트 상단 resouresname*/
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #9a8c81;
+}
+.pageComments{
+   border-left : 10px solid #6b503f;
+    font-size : 23px; height : 30px;
+    font-weight : 700; margin-left : 20px; padding-left : 10px;
+    margin-right : 220px; margin-top : -40px;
+}
+.updateTop button{
+  background-color: #9a8c81;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        margin : 0px 25px;
+   }
+
+
+
+/*==============================재고수정===============================================*/
+
+.updateContentOne, .updateContentTwo, .updateContentThree, .updateContentFour{  /*컨텐츠 구역*/
+ margin : 10px;
+ font-size : 40px; font-style : oblique;
+ color : #9a8c81;
+ display:flex;
+ justify-content:center;
+ margin : 50px;
+}
+.inputBox{
+    margin : 0px 20px 10px 30px;
+    height : 50px;
+    border-radius : 15px;
+    border : 1px solid #9a8c81;
+    width : 370px; font-size : 20px;
+}
+
+.updateContent{
+    width : 1470px; height :500px;
+    margin :20px; text-align : center;
+}
+.serachResoures{
+    margin : 10px;
+    height : 70px; width : 400px; font-size : 40px;
+    font-style : oblique ; color : white ;
+    border : none ;  border-radius : 15px;
+    background-color:#9a8c81
+}

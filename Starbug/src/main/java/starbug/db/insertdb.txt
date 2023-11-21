@@ -1,0 +1,300 @@
+# -------------------- staff_list insert --------------------------------
+insert into staff_list(sname , sposition , sidnum , ssex , smarry , ssorl , sphone, semail , sephone , sjoined , saddress)
+ values( '김규리', '점장', '0001012222333', 'man', 'married', 'lunar', '01011113333', 'asdf123@gmail.com', '01033334444', '2020-10-10', '서울시 강남구 중앙역' );
+insert into staff_list(sname , sposition , sidnum , ssex , smarry , ssorl , sphone, semail , sephone , sjoined , saddress)
+ values( '김찬희', '사원', '1212123333333', 'woman', 'single', 'solar', '01022223333', 'asdf@gmail.com', '01033334444', '2020-10-10', '서울시 강남구 한대앞역' );
+ insert into staff_list( sname , sposition , sidnum , ssex , smarry , ssorl , sphone, semail , sephone , sjoined , saddress)
+ values('박민재', '사원', '1111113333333', 'woman', 'married', 'lunar', '01011112222', 'adddd@gmail.com', '01033332222', '2020-10-11', '서울시 강남구 상록수역' );
+
+# ------------------- time_and_attendance insert ------------------------
+insert into time_and_attendance(sno_fk , tabsenteeism , tdate) values(1 , 1 , '2023-10-25');
+insert into time_and_attendance(sno_fk , tabsenteeism , tdate) values(1 , 1 , '2023-10-27');
+insert into time_and_attendance(sno_fk , tlate , tdate) values(2 , 1 , '2023-10-26');
+insert into time_and_attendance(sno_fk , tlate , tdate) values(3 , 1 , '2023-10-28');
+
+# ------------------- salary insert -------------------------------------
+insert into salary(sno_fk , sbasepay , sincentive , sdeductible , sdate) values(1, 2500000 , 10000 , 0 , '2023-10-10');
+insert into salary(sno_fk  , sbasepay , sincentive , sdeductible , sdate) values(1, 2500000 , 0 , 0 , '2023-11-10');
+insert into salary(sno_fk  , sbasepay , sincentive , sdeductible , sdate) values(2, 2500000 , 20000 , 0 , '2023-10-10');
+insert into salary(sno_fk  , sbasepay , sincentive , sdeductible , sdate) values(2, 2500000 , 20000 , 0 , '2023-11-10');
+insert into salary(sno_fk  , sbasepay , sincentive , sdeductible , sdate) values(3, 2500000 , 0 , 50000 , '2023-10-10');
+insert into salary(sno_fk  , sbasepay , sincentive , sdeductible , sdate) values(3, 2500000 , 0 , 50000 , '2023-11-10');
+
+
+# --------------------- rescategory insert --------------------------------
+insert into rescategory ( rescname ) values ( '원두' ); #1
+insert into rescategory ( rescname ) values ( '시럽' ); #2
+insert into rescategory ( rescname ) values ( '파우더' ); #3
+insert into rescategory ( rescname ) values ( '티백' ); #4
+insert into rescategory ( rescname ) values ( '유제품' ); #5
+insert into rescategory ( rescname ) values ( '냉동제품' ); #6
+insert into rescategory ( rescname ) values ( '소모품' ); #7
+insert into rescategory ( rescname ) values ( '과일청' ); #8
+
+# ---------------------- producer insert ---------------------------------------
+insert into producer (prname) values('모모스커피'); # 1
+insert into producer (prname) values('매일우유'); # 2
+insert into producer (prname) values('농산물시장'); #3
+insert into producer (prname) values('빅트레인 파우더'); #4
+insert into producer (prname) values('모닌 시럽'); #5
+insert into producer (prname) values('하겐다즈 아이스크림'); #6
+insert into producer (prname) values('백설'); #6
+insert into producer (prname) values('정훈이네 과일청'); #8
+insert into producer (prname) values('월드 컵'); #9
+insert into producer (prname) values('훌쩍 티슈'); #10
+insert into producer (prname) values('칠성탄산'); #11
+insert into producer (prname) values('리쉬티'); #12
+
+# ---------------------------------- resources insert --------------------------------
+insert into resources ( resname , resprice , rescno , prno )  values ( '원두' , 40000 , 1 , 1 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '우유' , 32000 , 5 , 2 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '생크림' , 4000 , 5 , 2 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '아이스크림' , 20000 , 6 , 6 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '설탕시럽' , 3000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '카라멜시럽' , 16000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '초코시럽' , 16000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '딸기시럽' , 9000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '수박시럽' , 9000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '사과시럽' , 9000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '메론시럽' , 9000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '망고시럽' , 9000 , 2 , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '민트시럽' , 16000 , 2  , 5 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '바닐라시럽' , 16000 , 2 , 5 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '초코파우더' , 25000 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '녹차파우더' , 25000 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '미숫가루' , 20000 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '쿠앤크파우더' , 25000 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '민트초코파우더' , 25000 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '요거트파우더' , 25000 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '복숭아파우더' , 8000 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '설탕' , 2000 , 3 , 6 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '딸기' , 1500 , 6 , 3 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '바나나' , 1500 , 6 , 3 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '블루베리' , 1500 , 6 , 3 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '망고' , 1500 , 6 , 3 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '수박' , 2000 , 6 , 3 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '메론' , 2000 , 6 , 3 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '사과' , 1500 , 6 , 3 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '히비스커스 티백' , 13000 , 4 , 12 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '캐모마일 티백' , 13000 , 4 , 12 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '얼그레이 티백' , 13000 , 4 , 12 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '자몽청' , 15000 , 8 , 8 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '레몬청' , 15000 , 8 , 8 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '청포도청' , 15000 , 8 , 8 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '패션후르츠청' , 20000 , 8 , 8 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '탄산수' , 10000 , 7 , 11 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '사이다' , 12000 , 7 , 11 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '테이크아웃컵' , 3000 , 7 , 9 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '컵뚜껑' , 2000 , 7 , 9 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '컵홀더' , 700 , 7 , 9 );
+
+insert into resources( resname , resprice , rescno , prno )  values ( '빨대' , 1200 , 7 , 9 );
+insert into resources( resname , resprice , rescno , prno )  values ( '냅킨' , 2000 , 7 , 10 );
+insert into resources( resname , resprice , rescno , prno )  values ( '물티슈' , 6000 , 7 , 10 );
+
+insert into resources ( resname , resprice , rescno , prno )  values ( '오레오 쿠키' , 2500 , 3 , 4 );
+insert into resources ( resname , resprice , rescno , prno )  values ( '블루베리 퓨레' , 16000 , 2 , 5 );
+
+# ------------------------------ parcel_log insert --------------------------------
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-20 12:10:34' , '2023-10-22 16:51:01' , 5 , 1 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-20 12:10:34' , '2023-10-22 16:51:01' , 5 , 2 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-20 12:10:34' , '2023-10-22 16:51:01' , 5 , 3 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-20 12:10:34' , '2023-10-22 16:51:01' , 5 , 4 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-20 12:10:34' , '2023-10-22 16:51:01' , 5 , 5 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-23 11:30:20' , '2023-10-26 13:30:30' , 5 , 6 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-23 11:30:20' , '2023-10-26 13:30:30' , 5 , 7 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-23 11:30:20' , '2023-10-26 13:30:30' , 5 , 8 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-23 11:30:20' , '2023-10-26 13:30:30' , 5 , 9 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-23 11:30:20' , '2023-10-26 13:30:30' , 5 , 10 );
+insert into parcel_log ( cdate , udate , pcount , resno ) values ( '2023-10-23 11:30:20' , '2023-10-26 13:30:30' , 5 , 11 );
+
+# ------------------------------ members insert ----------------------------------
+insert into members(mname,mphone,mage,msex,mdate,metc) values('김규리' , '010-1111-1111' , 40 , '여' , now() , '강아지간식 사러옴');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('신예지' , '010-2222-3333' , 30 , '여' , now() , '바닐라떼만 마심 잘생김');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('최병철' , '010-4444-4444' , 20 , '남' , now() , '따뜻한 아아 찾음 잘생김');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('제갈정훈' , '010-5555-5555' , 50 , '남' , now() , '본명다르다고 올때마다 말함');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('남궁찬희' , '010-6666-6666' , 60 , '여' , now() , '올 때 마다 원두 찌꺼기 가져감');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('박민재' , '010-7777-7777' , 40 , '여' , now() , '카공족임 멀티탭 가져옴');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('황기준' , '010-8888-8888' , 30 , '남' , now() , '재채기 소리큼');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('고연진' , '010-9999-9999' , 20 , '여' , now() , '남한테 관심없음');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('최의선' , '010-1212-1212' , 50 , '남' , now() , '곰돌이 푸닮음 고연진남친');
+insert into members(mname,mphone,mage,msex,mdate,metc) values('황태웅' , '010-1313-1313' , 60 , '여' , now() , '인사잘함');
+
+# -------------------------------- coupon insert --------------------------------
+insert into coupon(ccpercent , cccontent , ccdate) values( 10 , '회원가입축하 10%할인' , 30);
+insert into coupon(ccpercent , cccontent , ccdate) values( 10 , '테이크아웃시 10%할인' , 30);
+insert into coupon(ccpercent , cccontent , ccdate) values( 20 , '랜덤이벤트 당첨 20%할인' , 60);
+insert into coupon(ccpercent , cccontent , ccdate) values( 30 , '5만원이상 구매시 30% 할인', 60);
+insert into coupon(ccpercent , cccontent , ccdate) values( 5 , '랜덤이벤트 당첨 5%할인' , 30);
+insert into coupon(ccpercent , cccontent , ccdate) values( 10 , '랜덤이벤트 당첨 10%할인' , 30);
+insert into coupon(ccpercent , cccontent , ccdate) values( 15 , '블랙프라이데이 행사 15%할인' , 15);
+insert into coupon(ccpercent , cccontent , ccdate) values( 20 , '블랙프라이데이 행사 20%할인' , 15);
+insert into coupon(ccpercent , cccontent , ccdate) values( 30 , '직원 30%할인' , 30);
+insert into coupon(ccpercent , cccontent , ccdate) values( 100 , '개진상 히든카드 100%' , 30);
+
+# ---------------------------------- coupon_history --------------------------------
+# 쿠폰 코드는 '날짜-쿠폰카테고리-회원번호' 순입니다.
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-001-001' , now() , now() , 1 , 1);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-002-002' , now() , now() , 2 , 2);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-003-003' , now() , now() , 3 , 3);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-001-004' , now() , now() , 1 , 4);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-002-005' , now() , now() , 2 , 5);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-003-006' , now() , now() , 3 , 6);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-004-007' , now() , now() , 4 , 7);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-005-008' , now() , now() , 5 , 8);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-006-009' , now() , now() , 6 , 9);
+insert into coupon_history(chcode , cdate , udate , ccno , mno ) values( '20231029-007-010' , now() , now() , 7 , 10);
+
+# --------------------- product_category insert -------------------------
+insert into product_category(pcname) values('커피');
+insert into product_category(pcname) values('논 커피');
+insert into product_category(pcname) values('에이드');
+insert into product_category(pcname) values('주스');
+insert into product_category(pcname) values('스무디');
+
+# ------------------------- product insert ----------------------------------
+insert into product(pname, pprice, pcno) values('에스프레소', 3000, 1);
+insert into product(pname, pprice, pcno) values('아메리카노', 3500, 1);
+insert into product(pname, pprice, pcno) values('카페라떼', 4000, 1);
+insert into product(pname, pprice, pcno) values('카라멜마끼야또', 4500, 1);
+insert into product(pname, pprice, pcno) values('바닐라라떼', 4500, 1);
+insert into product(pname, pprice, pcno) values('카페모카', 4500, 1);
+insert into product(pname, pprice, pcno) values('아인슈페너', 5000, 1);
+insert into product(pname, pprice, pcno) values('아포가토', 6000, 1);
+
+insert into product(pname, pprice, pcno) values('초코라떼', 4000, 2);
+insert into product(pname, pprice, pcno) values('녹차라떼', 4000, 2);
+insert into product(pname, pprice, pcno) values('미숫가루라떼', 4000, 2);
+insert into product(pname, pprice, pcno) values('히비스커스티', 5000, 2);
+insert into product(pname, pprice, pcno) values('캐모마일티', 5000, 2);
+insert into product(pname, pprice, pcno) values('얼그레이티', 5000, 2);
+insert into product(pname, pprice, pcno) values('복숭아아이스티', 4000, 2);
+
+insert into product(pname, pprice, pcno) values('자몽에이드', 5500, 3);
+insert into product(pname, pprice, pcno) values('레몬에이드', 5500, 3);
+insert into product(pname, pprice, pcno) values('청포도에이드', 5500, 3);
+insert into product(pname, pprice, pcno) values('패션후르츠에이드', 6000, 3);
+
+insert into product(pname, pprice, pcno) values('딸기주스', 5500, 4);
+insert into product(pname, pprice, pcno) values('수박주스', 5500, 4);
+insert into product(pname, pprice, pcno) values('사과주스', 5500, 4);
+insert into product(pname, pprice, pcno) values('메론주스', 5500, 4);
+insert into product(pname, pprice, pcno) values('망고주스', 5500, 4);
+
+insert into product(pname, pprice, pcno) values('오레오스무디', 6000, 5);
+insert into product(pname, pprice, pcno) values('플레인요거트스무디', 6000, 5);
+insert into product(pname, pprice, pcno) values('블루베리스무디', 6500, 5);
+insert into product(pname, pprice, pcno) values('민트초코스무디', 6500, 5);
+insert into product(pname, pprice, pcno) values('딸기바나나스무디', 6500, 5);
+
+# --------------------- recipe insert ------------------------------------
+insert into recipe(rquantity, pno, resno) values(0.02, 1, 1);
+insert into recipe(rquantity, pno, resno) values(0.02, 2, 1);
+insert into recipe(rquantity, pno, resno) values(0.02, 3, 1);
+insert into recipe(rquantity, pno, resno) values(0.2, 3, 2);
+insert into recipe(rquantity, pno, resno) values(0.02, 4, 1);
+insert into recipe(rquantity, pno, resno) values(0.2, 4, 2);
+insert into recipe(rquantity, pno, resno) values(0.02, 4, 6);
+insert into recipe(rquantity, pno, resno) values(0.02, 5, 1);
+insert into recipe(rquantity, pno, resno) values(0.2, 5, 2);
+insert into recipe(rquantity, pno, resno) values(0.02, 5, 14);
+insert into recipe(rquantity, pno, resno) values(0.02, 6, 1);
+insert into recipe(rquantity, pno, resno) values(0.2, 6, 2);
+insert into recipe(rquantity, pno, resno) values(0.02, 6, 7);
+insert into recipe(rquantity, pno, resno) values(0.02, 7, 1);
+insert into recipe(rquantity, pno, resno) values(0.05, 7, 3);
+insert into recipe(rquantity, pno, resno) values(0.05, 7, 22);
+insert into recipe(rquantity, pno, resno) values(0.02, 8, 1);
+insert into recipe(rquantity, pno, resno) values(0.2, 8, 4);
+
+insert into recipe(rquantity, pno, resno) values(0.2, 9, 2);
+insert into recipe(rquantity, pno, resno) values(0.02, 9, 7);
+insert into recipe(rquantity, pno, resno) values(0.02, 9, 15);
+insert into recipe(rquantity, pno, resno) values(0.2, 10, 2);
+insert into recipe(rquantity, pno, resno) values(0.02, 10, 16);
+insert into recipe(rquantity, pno, resno) values(0.2, 11, 2);
+insert into recipe(rquantity, pno, resno) values(0.02, 11, 17);
+insert into recipe(rquantity, pno, resno) values(0.02, 12, 30);
+insert into recipe(rquantity, pno, resno) values(0.02, 13, 31);
+insert into recipe(rquantity, pno, resno) values(0.02, 14, 32);
+insert into recipe(rquantity, pno, resno) values(0.02, 15, 21);
+
+insert into recipe(rquantity, pno, resno) values(0.05, 16, 33);
+insert into recipe(rquantity, pno, resno) values(0.05, 16, 37);
+insert into recipe(rquantity, pno, resno) values(0.05, 17, 34);
+insert into recipe(rquantity, pno, resno) values(0.05, 17, 37);
+insert into recipe(rquantity, pno, resno) values(0.05, 18, 35);
+insert into recipe(rquantity, pno, resno) values(0.05, 18, 37);
+insert into recipe(rquantity, pno, resno) values(0.05, 19, 36);
+insert into recipe(rquantity, pno, resno) values(0.05, 19, 37);
+
+insert into recipe(rquantity, pno, resno)values(1, 20, 23);
+insert into recipe(rquantity, pno, resno)values(0.02, 20, 8);
+insert into recipe(rquantity, pno, resno)values(1, 21, 27);
+insert into recipe(rquantity, pno, resno)values(0.02, 21, 9);
+insert into recipe(rquantity, pno, resno)values(1, 22, 29);
+insert into recipe(rquantity, pno, resno)values(0.02, 22, 10);
+insert into recipe(rquantity, pno, resno)values(1, 23, 28);
+insert into recipe(rquantity, pno, resno)values(0.02, 23, 11);
+insert into recipe(rquantity, pno, resno)values(1, 24, 26);
+insert into recipe(rquantity, pno, resno)values(0.02, 24, 12);
+
+insert into recipe(rquantity, pno, resno) values(0.2, 25, 2);
+insert into recipe(rquantity, pno, resno) values(0.2, 25, 4);
+insert into recipe(rquantity, pno, resno) values(0.02, 25, 18);
+insert into recipe(rquantity, pno, resno) values(2, 25, 46);
+insert into recipe(rquantity, pno, resno) values(0.2, 26, 2);
+insert into recipe(rquantity, pno, resno) values(0.2, 26, 4);
+insert into recipe(rquantity, pno, resno) values(0.02, 26, 20);
+insert into recipe(rquantity, pno, resno) values(0.2, 27, 2);
+insert into recipe(rquantity, pno, resno) values(0.2, 27, 4);
+insert into recipe(rquantity, pno, resno) values(1, 27, 25);
+insert into recipe(rquantity, pno, resno) values(0.02, 27, 46);
+insert into recipe(rquantity, pno, resno) values(0.2, 28, 2);
+insert into recipe(rquantity, pno, resno) values(0.2, 28, 4);
+insert into recipe(rquantity, pno, resno) values(0.02, 28, 13);
+insert into recipe(rquantity, pno, resno) values(0.02, 28, 19);
+insert into recipe(rquantity, pno, resno) values(0.2, 29, 2);
+insert into recipe(rquantity, pno, resno) values(0.2, 29, 4);
+insert into recipe(rquantity, pno, resno) values(1, 29, 23);
+insert into recipe(rquantity, pno, resno) values(1, 29, 24);
+insert into recipe(rquantity, pno, resno) values(0.02, 29, 8);
+
+# ---------------------------- orders insert --------------------------------
+insert into orders( odate, ono, mno, ostate, totalprice, paid) values( '2023-10-30 12:00:00', 1, 1, 1, 6500, 6500);
+insert into orders( odate, ono, mno, ostate, totalprice, paid) values( '2023-10-30 12:00:00', 2, 5, 1, 6500, 6500);
+insert into orders( odate, ono, mno, ostate, totalprice, paid) values( '2023-10-30 12:00:00', 3, 2, 1, 8500, 8500);
+insert into orders( odate, ono, mno, ostate, totalprice, paid) values( '2023-10-30 12:00:00', 4, 3, 1, 7500, 7500);
+insert into orders( odate, ono, mno, ostate, totalprice, paid) values( '2023-10-30 12:00:00', 5, 4, 1, 7500, 7500);
+
+# ---------------------------- orders_details insert --------------------------------
+insert into orders_details(odtno, ono, pno) values (1, 1, 1);
+insert into orders_details(odtno, ono, pno) values (2, 1, 2);
+insert into orders_details(odtno, ono, pno) values (3, 2, 1);
+insert into orders_details(odtno, ono, pno) values (4, 2, 2);
+insert into orders_details(odtno, ono, pno) values (5, 3, 3);
+insert into orders_details(odtno, ono, pno) values (6, 3, 4);
+insert into orders_details(odtno, ono, pno) values (7, 4, 5);
+insert into orders_details(odtno, ono, pno) values (8, 4, 1);
+insert into orders_details(odtno, ono, pno) values (9, 5, 2);
+insert into orders_details(odtno, ono, pno) values (10, 5, 3);
+
+# -------------------------- inventory_log insert -------------------------------
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-0.02,1);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-0.2,2);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-0.02,14);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-1,23);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-0.2,2);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-1,40);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-1,41);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-1,42);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-1,40);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-1,41);
+insert into inventory_log(inlogdate,inloghistory,resno)values("2023-10-27",-1,42);

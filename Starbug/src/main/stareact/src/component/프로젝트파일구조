@@ -1,0 +1,16 @@
+reactapp
+    - node_modules
+    - public
+        - index.html
+        - favicon.ico
+    - src
+        - component
+
+        - index.js
+            - 프로젝트 고정
+                import ? from './component/?';
+
+    - gitignore
+    - package.json
+    - package-lock.json
+    - README.md
