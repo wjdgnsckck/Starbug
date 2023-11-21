@@ -1,0 +1,170 @@
+.insertWrap{
+    background-color : #f9f9f9;
+    height : 760px;
+    margin : 0! important;
+    width : 1560px;
+}
+.insertContentOne, .insertContentTwo, .insertContentThree, .insertContentFour{  /*컨텐츠 구역*/
+ margin : 10px;
+ font-size : 40px; font-style : oblique;
+ color : #9a8c81;
+ display:flex;
+ justify-content:center;
+ margin : 50px;
+}
+.logtable{
+     width : 1520px !important;
+     border-bottom : 1px solid rgb(224,224,224) ;
+}
+
+.inputBox{
+    margin : 0px 20px 10px 30px;
+    height : 50px;
+    border-radius : 15px;
+    border : 1px solid #9a8c81;
+    width : 370px; font-size : 20px;
+}
+.insertTop{
+        height: 40px;
+        background-color : #f9f9f9;
+        padding-top : 20px;
+        margin-bottom : 10px;
+        display : flex ;
+        justify-content : space-between;
+        border-radius : 15px;
+}
+.category{
+    width : 100% ;     text-align: center;
+    color: #9a8c81;
+        font-size: 25px;
+        font-style: oblique;
+        font-weight: 700;
+        margin-left: 20px;
+}
+.insertResoures button{
+   margin : 10px;
+    height : 70px; width : 400px; font-size : 40px;
+    font-style : oblique ; color : white ;
+    border : none ;  border-radius : 15px;
+    background-color:#9a8c81
+}
+.insertResoures{
+    width : 100%;
+    text-align: center;
+}
+.pagewraps{
+margin : 0 auto;
+height : 85px;
+}
+.delete{                    /* 삭제 버튼 css*/
+    background-color: #9a8c81;
+        border: none; border-radius: 15px;
+        color: #f9f9f9;
+        cursor: pointer;
+        font-size: 12px;      font-weight: 700;
+        height: 20px;   width: 50px;
+}
+
+.searchDelete button{
+    background-color: #9a8c81;
+}
+/*발주내역 확인 모달창 width height 는 일부러 안잡았음*/
+.parcelLogModal{
+    position : fixed;
+    background-color : white;
+    left: 1220px;
+    top: 615px;
+    z-index : 99;
+    width : 300px ; height : 200px;
+    text-align : center;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius:15px;
+}
+.parcelLogModal table {
+    width : 300px;
+    text-align : center;
+    font-size  : 18px;
+    margin-top : 10px;
+    overflow-y: scroll;
+}
+.ModalTop{
+    margin-bottom : 15px; border-radius : 15px;
+    width : 300 px; font-weight : bold;
+    height : 24px ; color : white;
+    font-size : 20px; background-color : #9a8c81;
+}
+.click{
+    width : 100%;
+    height : 50px;
+}
+.click button{
+    background-color: #9a8c81;
+      border: none;
+      border-radius: 15px;
+      color: #f9f9f9;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      height: 40px;
+      margin: 60px 25px 0px 25px;
+      width: 120px;
+
+}
+.logForm{
+    width : 100%;
+    margin : 0 auto;
+    text-align : right;
+}
+.inloghistory , .resname{
+    display : flex;
+    justify-content: end;
+    align-items: center;
+    margin : 15px 30px 20px 0px;
+}
+.inloghistory , p{
+        color: #9a8c81;
+        font-size: 20px;
+        font-style: oblique;
+        font-weight: 700;
+ }
+
+.inloghistory input, .resname input{
+        border: 1px solid #9a8c81;
+        height: 40px;
+        border-radius: 15px;
+        margin-left : 20px;
+}
+.logForm button{
+    background-color: #9a8c81;
+              color: #fff;
+              cursor: pointer;
+              font-size: 16px;
+              font-weight: 700;
+              width: 200px;
+              height: 50px;
+              border: none;
+              border-radius: 15px;
+              margin : 0px 25px;
+}
+.excel{
+    margin-right : 20px;
+    display:flex;
+    align-items : center;
+}
+.excel p{
+    color: #9a8c81;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 700;
+}
+.logDate{
+border: 1px solid #9a8c81;
+    border-radius: 15px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right : 20px ;
+}
+.inventoryBody{
+    border-right : 1px solid rgb(224,224,224)
+}
+

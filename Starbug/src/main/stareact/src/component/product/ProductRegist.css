@@ -1,0 +1,53 @@
+/* 상품 등록 배경 */
+.productRegistBack{
+    height: 700px;
+    margin-left: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+/* 상품 등록 공간 */
+.productRegistBody{
+    text-align: left;
+    width: 310px;
+}
+
+.registBody{
+    background-color: #c5bcb6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* h2 태그 */
+.registProductH2{
+    border-left: 10px solid #6b503f;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+/* Select태그 pcno */
+.pcnoSelect{
+    margin-left: 5px;
+    width: 100px;
+}
+
+/* Select태그 resno */
+.resnoSelect{
+    width: 125px;
+    margin-left:5px;
+}
+
+/* 재료 용량 */
+.rquantity{
+    width: 100px;
+}
+
+.rquantitySpan{
+    margin-left: 10px;
+}

@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: 'SUITE-Regular';
+}
+
+/* 전체 */
+.RoutesBox{
+    display: flex;
+    width : 1800px; height : 900px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: #e6e6e7;
+    display: flex;
+}
+
+
+.RoutesBox02{
+    width : 1800px; height : 900px;
+    background-color: #353535;
+}
+
+
+
+/* 메인화면 */
+.mainBox{
+    background-color: #F9F9F9;
+    width: 1500px; height:600px;
+    border-radius: 10px;
+    margin: 100px 100px;
+    padding: 50px 50px;
+    box-shadow : 9px 10px 20px #272727;
+}
+
+/* 로고 */
+.mainBox img{
+    width: 50px; height:50px;
+}
+.StarBugSystem{
+    font-size: 25px;
+    font-weight: bold;
+}
+/* 사업자 */
+.ownerBoxContent{
+   padding-left: 25px;
+}
+.ownerName{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.ownerDate{
+    color: gray;
+}
+
+.mainBtnBox{
+    display : flex;
+    justify-content: space-evenly;
+        padding-left: 120px;
+}
+.linkBox{
+    display : flex;
+    flex-direction: column;
+}
+/* 사업자 로그인 및 정보 구역 */
+.ownerBox{
+    height: 220px;
+}
+.ownerBoxContent{
+    padding-top: 70px;
+}
+
+
+/* 영업시작 버튼 */
+.startPos a{
+    width: 300px; height: 280px;
+    font-size: 42px; font-weight: bold;
+    border-radius: 55px;
+    display: flex; justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px 5px #AAAAAA;
+    border: 12px solid #74675C;
+    margin-top: 30px;
+}
+.startPos a:hover{
+    box-shadow: 7px 8px 14px #AAAAAA;
+    background-color: #E6E6E6;
+    font-size: 43px;
+}
+
+
+/* 메인 링크 구역 */
+.linkBox{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.linkBox_02 div{
+    height: 135px;
+    margin: 5px;
+    width: 270px;
+    background-color: #4D604D;
+    border: 1px solid #74675c;
+    box-shadow: 2px 2px 5px #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    font-size: 30px;
+}
+
+.linkBox_02 div:hover{
+     box-shadow: 7px 8px 14px #AAAAAA;
+     background-color: #3E4D3E;
+     font-size: 31px;
+
+}
+.linkBox a{
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+
+/* 사이드바 */
+.sideBar{
+    width : 200px;
+    background-color: #303030;
+    padding: 50px 0px;
+    font-weight: bold;
+    line-height: 250%;
+    border: 4px solid #E6E6E7;
+}
+.reactUL a{
+    color: #F9F9F9;
+}
+.activeHeaderCategoryA{
+    color: #000 !important;
+}
+
+/* 사이드바 카테고리 링크 */
+.reactUL li{
+    width : 158px;
+    font-size: 22px;
+    font-weight: bold;
+    padding : 10px;
+    padding-left: 25px;
+    color: #F9F9F9;
+}
+.activeHeaderCategory{
+    font-size: 24px;
+    color: black;
+    background-color: #E6E6E7;
+    box-shadow: 0px 3px 4px #AEAEB0;
+}

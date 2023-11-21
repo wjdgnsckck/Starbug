@@ -1,0 +1,258 @@
+
+
+/* 포스 전체 구역 / 레아이웃들 */
+.bodyContainer{ display: flex; }
+.cateAndProduBox{ width : 1000px; position: relative; background-color: #C5BCB6; box-shadow: 4px 3px 8px #D0D0D2; }
+.posCartBox{ width : 800px; }
+.posMenuCategory{ background-color: #E6E6E7 !important; }
+
+
+/* 카테고리 버튼들 */
+.poscategoryBtn{
+    width: 166px; height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: #E6E6E7;
+    border-radius: 15px 15px 0 0;
+}
+.poscategoryBtn:hover{ background-color: #DBDBDB; }
+.active{
+    background-color: #C5BCB6;
+
+}
+
+
+/* 상품 버튼들 */
+.posProductBtn{
+    margin: 10px 10px;
+    width: 180px; height: 100px;
+    border: none; border-radius: 7px;
+    font-weight: bold;
+    font-size: 19px;
+    background-color: #F7F7F7;
+    box-shadow: 2px 2px 5px #817367;
+    position: relative;
+}
+.posProductBtn:hover {
+    background-color: #DFDAD7;
+    box-shadow: 7px 8px 14px #817367;
+}
+
+.salePrice{
+    position: absolute;
+    top: 60px;
+    left: 128px;
+    font-size: 14px;
+}
+
+/* 장바구니 */
+.cartHeader{
+    padding: 10px 45px;
+    font-size: 28px;
+}
+.cart{
+    height: 860px; width: 760px;
+    margin: 20px 20px;
+    background-color: #F7F7F7;
+    box-shadow: 8px 2px 9px #D0D0D2;
+    border-radius: 12px;
+}
+
+.cartlistin{
+    width: 87%; height: 60%;
+    background-color: white;
+    margin: 5px 20px; padding: 30px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    font-size: 30px;
+    box-shadow: 4px 3px 8px #D0D0D2;
+}
+/* 카트내 항목들 */
+.cartlistLi{
+    border-bottom: 2px solid #eeeeee;
+    margin-bottom: 30px;
+}
+
+.cartlistin::-webkit-scrollbar {
+  width: 12px; /* 스크롤바의 너비 조절 */
+}
+.cartlistin::-webkit-scrollbar-track {
+  border-radius: 10px; /* 스크롤바의 테두리 조절 */
+}
+.cartlistin::-webkit-scrollbar-thumb {
+  background-color: #9D9D9D; /* 스크롤바 색상을 원하는대로 설정 */
+  border-radius: 10px;
+}
+.cartlistin::-webkit-scrollbar-button {
+  display: none; /* 스크롤바의 방향표시 버튼 숨김 */
+}
+
+/* 장바구니 하단 */
+.cartBottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+
+}
+.cartBottom02{
+    display: flex;
+}
+
+/* 장바구니 총 금액 */
+.totalPrice{
+    padding-top: 75px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #F74633;
+    background-color: white;
+    width: 214px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 4px 3px 8px #D0D0D2;
+}
+
+.cartBottomMno{
+    padding-left: 10px;
+    width: 344px;
+    box-shadow: 4px 3px 8px #D0D0D2;
+    font-weight: bold;
+}
+.cartBottomMno input{
+    width: 257px;
+    font-size: 26px;
+    background-color : #F7F7F7;
+}
+.cartBottomMselect{
+    width: 257px;
+    font-size: 19px;
+    background-color : #F7F7F7;
+}
+.cartBottomMselect:hover, .cartBottomMselect:active,
+.cartBottomMselect:focus, .cartBottomMselect:visited{
+    outline: none;
+}
+.cartBottomMno input, .cartBottomMselect{
+    border-radius: 0px;
+    border: none;
+    border-bottom: 3px solid #9A8C81;
+}
+
+
+/* 장바구니 하단 버튼 들*/
+.cartBottom button{
+    border: none;
+    border-radius: 5px;
+    width: 145px; height: 115px;
+    background-color: #9A8C81;
+    margin: 3px 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 2px 2px 5px #817367;
+}
+.cartBottom button:hover{
+    background-color: #8A7B6F;
+}
+
+.cartBottomSearch{
+    width: 102px !important;
+    height: 73px !important;
+    font-size: 20px !important;
+}
+.cartlistin li{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 장바구니 삭제 */
+.onDeleteCartItembtn{
+    cursor: pointer;
+    color: #464646;
+    font-weight: bold;
+    margin-left : 13px;
+    font-size: 30px;
+}
+.onDeleteCartItembtn:hover{
+    font-weight: bold;
+    color: #5E5E5E;
+}
+
+/* 뒤로 가기 버튼 */
+.goToMainBtn{
+    position: absolute;
+    bottom: 0px; left: 0px;
+}
+.goToMainBtn img{
+    width: 105px; height: 105px;
+}
+
+/*  =========================== 손익계산서 =========================== */
+.incomeCenter{
+    padding-top: 20px;
+    height: 650px; width: 1520px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 6px 9px #e8e8e8;
+}
+.incomeInfo{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+    color: #454545;
+}
+.incomeInfo_2{
+    padding-top: 12px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-around;
+    width: 1325px;
+    height: 40px;
+    background-color: #9A8C81; color: white;
+    border: 2.3px solid #E0E0E0;
+    margin-left: 95px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.incomeBox{
+    display:flex;
+    justify-content: center;
+}
+.incomeTitleBox{
+    width:660px; height:525px;
+    border: 2.3px solid #E0E0E0;
+}
+.incomeContentBox{
+    width:660px; height:525px;
+    border: 2.3px solid #E0E0E0;
+    border: 2.3px solid #E0E0E0;
+    display:flex;
+}
+.incomeContentBox div{
+    width:330px;
+}
+
+
+.incomeTitleBox h4, .incomeContentBox h4{
+    font-size: 22px;
+    padding-right: 30px;
+    line-height: 260%;
+    text-align: right;
+}
+
+.incomeTitleBox h5, .incomeContentBox h5{
+    font-size: 19px;
+    padding-right: 30px;
+    line-height: 210%;
+    text-align: right;
+    font-weight: 500;
+}
+
+.incomeTitleBox h4, .incomeTitleBox h5{
+    text-align: left !important;
+    padding-left: 250px;
+}
+
+.incomeTitleBox h5{
+    padding-left: 300px !important;
+}

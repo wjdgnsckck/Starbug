@@ -1,0 +1,57 @@
+.inLogWrap{
+    display : flex;
+    background-color : #F9F9F9;
+    height : 750px;
+    width : 1560px;
+    flex-direction : column;
+}
+.logSearchBtn{
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #998A7F;
+    color: white;
+    font-size: 17px;
+    margin-left : 10px;
+}
+
+
+.inLogDateSearch{
+    margin-top : 50px;
+    width : 750px;
+    display: flex;
+    align-items: center;
+    padding-left : 20px;
+}
+
+.inLogDate{
+    width : 210px;
+}
+
+.logContentArea{
+    margin-top : 30px;
+    padding-top : 30px;
+    border-top : 0.5px solid #6B503F;
+    width : 90%;
+    margin-left : 20px;
+}
+
+.inLogContentLine{
+    width : 100%;
+    margin-top : 5px;
+    border-bottom : 0.5px solid #6B503F;
+}
+
+.invenLogTh{
+   border-left : 0.5px solid #6B503F;
+   text-align : center;
+   padding-bottom : 5px;
+}
+
+.invenLogTd{
+    border-left : 0.5px solid #6B503F;
+    padding-left : 5px;
+    text-align : center;
+    padding-bottom : 5px;
+}

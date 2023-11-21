@@ -1,0 +1,91 @@
+/*ParcelView 전체공간*/
+.parcelLogWrap{
+    display: flex;
+    flex-direction: column;
+    background: #F9F9F9;
+    width: 1560px; height : 750px;
+}
+
+/*dateSelect 공간*/
+.dateWrap{
+    margin-top : 50px;
+    padding-left : 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*select 태그*/
+.dateSelect{
+    width: 350px;
+}
+
+/*발주내역 공간*/
+.parcelLogContent{
+    margin-top : 30px;
+    padding-top : 30px;
+    border-top : 0.5px solid #6B503F;
+    width : 90%;
+    margin-left : 20px;
+}
+
+/*발주내역 tr*/
+.parcelLogLine{
+    width : 100%;
+    margin-top : 5px;
+    border-bottom : 0.5px solid #6B503F;
+}
+
+/*발주내역 table 헤더*/
+.logTh{
+    border-left : 0.5px solid #6B503F;
+    display : flex;
+    flex-direction: row;
+    text-align : center;
+    justify-content: center;
+    padding-bottom : 5px;
+}
+
+/*parcelLogLine 의 <td>*/
+.logTd{
+    border-left : 0.5px solid #6B503F;
+    display : flex;
+    flex-direction: row;
+    padding-left : 5px;
+    padding-bottom : 5px;
+}
+
+/*발주내역 안의 버튼 전부*/
+.logTd button{
+    margin-right : 5px;
+}
+
+/*총 금액 공간*/
+.priceArea{
+    margin-top : 5px;
+}
+
+/*주문 도착 버튼*/
+.arriveParcelBtn{
+    width : 50%;
+}
+
+/*주문 취소 버튼*/
+.cancleParcelBtn{
+    width : 50%;
+}
+
+/*환불 신청 버튼*/
+.refundParcelBtn{
+    width : 100%;
+}
+
+/*총금액 공간*/
+.priceArea{
+    font-size : 20px;
+}
+
+/*엑셀 이미지*/
+.excelImg{
+    width : 50px;
+    box-shadow: 5px 5px 5px -3px gray;
+}

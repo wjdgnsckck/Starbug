@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.16'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '1.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 10월 30일 시큐리티 라이브러리 추가
+    implementation 'org.springframework.boot:spring-boot-starter-security'// 스프링 시큐리티 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-web' // springboot web 라이브러리
+    runtimeOnly 'com.mysql:mysql-connector-j' // mysql 라이브러리
+    compileOnly 'org.projectlombok:lombok' // 룸복
+    annotationProcessor 'org.projectlombok:lombok' // 룸복
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // jpa
+    implementation 'org.apache.poi:poi:5.2.2' // HSSFWorkbook 사용
+    implementation 'org.apache.poi:poi-ooxml:5.2.2' // XSSFWorkbook 사용
+    implementation 'net.nurigo:sdk:4.3.0' // 문자 인증
+    implementation 'org.springframework.boot:spring-boot-starter-websocket' // 소켓
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// -------------------------------- 리액트(빌드) 통합 -------------------------------------------------------- //
+// *. 터미널에서 리액트 실행하지 않고 gradle이 리액트를 빌드해서 빌드된 파일을 스프링쪽으로 이동
+// 1. 리액트 코드파일이 있는 리액트 프로젝트 폴더 경로
+def frontendDir = "$projectDir/src/main/stareact" // $projectDir/src/main/{리액트폴더명}
+// 2. 리액트 코드파일을 빌드해서 빌드된 파일을 어디로 이동할 지 정의
+sourceSets {
+    main {
+        resources { srcDirs = ["$projectDir/src/main/resources"]
+        }
+    }
+}
+// 3. 이동 [ 원본 이동x, 복사 이동o ]
+processResources { dependsOn "copyReactBuildFiles" }
+
+// 4. [1] 리액트 설치 [ 리액트 라이브러리 없으면 npm update 자동으로 해주고 있으면 npm update x ]
+task installReact(type: Exec) {
+    workingDir "$frontendDir" // 리액트코드가 있는 폴더경로
+    inputs.dir "$frontendDir" // 빌드 했을때 저장할 필드경로
+    group = BasePlugin.BUILD_GROUP
+    // npm 호출 [ 운영체제 별로 명령어 다름 ] = 강의기준 : 개발(윈도우) / 배포(리눅스)
+    // 1. window 환경이면
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine "npm.cmd", "audit", "fix"
+        commandLine 'npm.cmd', 'install' }
+    else { // 운영체제가 window가 아니면
+        commandLine "npm", "audit", "fix" commandLine 'npm', 'install'
+    }
+}
+
+// 5. [2] 리액트 빌드
+task buildReact(type: Exec) {
+    dependsOn "installReact"
+    workingDir "$frontendDir" // 리액트코드가 있는 폴더경로
+    inputs.dir "$frontendDir" // 빌드 했을때 저장할 필드경로
+    group = BasePlugin.BUILD_GROUP
+    // npm 호출 [ 운영체제 별로 명령어 다름 ] = 강의기준 : 개발(윈도우) / 배포(리눅스)
+    // 1. window 환경이면
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine "npm.cmd", "run-script", "build"
+    } else { // 운영체제가 window가 아니면
+        commandLine "npm", "run-script", "build"
+    }
+}
+
+// 6. [3] 리액트 빌드파일 복사
+task copyReactBuildFiles(type: Copy) {
+    dependsOn "buildReact"
+    from "$frontendDir/build" // 복사할 파일이 어디에서
+    into "$projectDir/src/main/resources/static" // 복사할 파일을 어디로
+}

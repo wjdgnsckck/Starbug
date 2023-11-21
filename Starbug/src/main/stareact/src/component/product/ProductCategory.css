@@ -1,0 +1,66 @@
+
+/* 상품 카테고리 배경 */
+.productCategoryBack{
+    background-color: #fff;
+    height: 760px;
+    width: 1560px;
+}
+/* 상품 카테고리 공간 */
+.productCategoryBox{
+    padding:10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 상품 카테고리 관리 공간 */
+.productCategoryManagementBox{
+    width: 800px;
+    text-align: center;
+}
+
+/* h2 태그 */
+.categoryH2 {
+    border-left: 10px solid #6b503f;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* 상품 카테고리 리스트 */
+.categoryBoxList{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #C5BCB6;
+    border-radius: 10px;
+}
+
+/* 상품 카테고리 하나의 박스 */
+.categoryBox{
+    background-color: #fff;
+    border-radius: 10px;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+    width: 168px;
+}
+
+.categoryPcname{
+    margin-bottom: 10px;
+}
+
+.inputCategoryPcname{
+    margin-left: 5px;
+}
+
+
+/* 상품 카테고리 등록 공간 */
+.registCategoryBox{
+    background-color: #c5bcb6;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}

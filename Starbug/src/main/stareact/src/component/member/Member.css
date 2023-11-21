@@ -1,0 +1,171 @@
+/*categoryArea > button ,categoryArea > input {
+    display : inline-block;
+}*/
+
+.memberContainer {
+    width: 1600px;
+    margin-top: 20px; /* 병철 11월 17일 추가 함*/ /*규리 11월 19일 50->20px로 수정함*/
+}
+
+/* 카테고리 영역 */
+.categoryArea{
+    width: 800px;
+    height : 100px;
+    margin-left : 20px;/*규리 11월 19일 50->20px로 수정함*/
+}
+
+.btnMember , .btnCoupon , .btnMemberInsert{
+    width: 200px;
+    height : 100px;
+    cursor: pointer;
+    font-size : 32px;
+    border: none;
+    background-color : #E6E6E7;
+}
+
+/* 카테고리 선택시 */
+.btnSelect {
+    background-color : #F9F9F9;
+    color: black;
+    border-radius: 15px 15px 0 0;
+    width : 200px;
+    height :100px;
+    font-weight : bold;
+    font-size : 32px;
+}
+
+/* 컨텐츠 영역 */
+.contentArea {
+    width: 1500px;
+    height : 750px;
+    border-radius : 15px;
+    border-top-left-radius: 0;
+    background-color : #F9F9F9;
+    margin-left: 20px;  /*규리 11월 19일 50->20px로 수정함*/
+}
+.memberbtnArea{
+    width: 820px;
+    height : 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left : 520px;
+    padding-top : 30px;
+}
+.tableArea table {
+    margin-bottom : 20px;
+}
+.cpSelect , .msearchSelect{  /* select css*/
+    width: 180px;
+    height: 40px;
+    border-radius : 15px;
+    padding-left : 5px;
+}
+
+.msearchSelect{
+    width: 70px;
+}
+.cpInsert , .btnSearch{ /* 버튼 css */
+    width : 120px;
+    height : 40px;
+    background-color: #9A8C81;
+    border-radius : 15px;
+    color: white;
+    border : none;
+    cursor: pointer;
+    font-weight : bold;
+    font-size : 16px;
+}
+
+.findMember {
+    width: 220px;
+    height : 40px;
+    border-radius : 15px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    background-color: #9a8c81;
+
+}
+.findMember::placeholder{
+    color: white;
+}
+/* 테이블 */
+.tableArea{
+    margin: 0 auto;
+    width : 1200px;
+    margin-top : 30px;
+}
+
+.tableArea table {
+    width: 1200px;
+    border-top: 1px solid #white;
+    border-collapse: collapse;
+}
+
+.tableArea th , .tableArea td {
+    text-align: center;
+    border-bottom: 1px solid #white;
+    border-left: 1px solid #white;
+    padding: 13px 0;
+}
+
+.tableArea th {
+    background-color: #D4CDC9;
+}
+
+.tableArea tr {
+     background-color: #E6E6E7;
+}
+.tableArea tr:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+.memoArea{
+    width : 500px;
+}
+.leftText{
+    text-align: left;
+}
+
+.checkMember , .checkMemberAll{
+    width : 20px;
+    height : 20px;
+    vertical-align: middle;
+    margin : 0 5px;
+}
+
+.mnoWidth{
+    width: 80px;
+}
+
+.phoneWidth{
+    width:180px;
+}
+
+/* mui 페이징처리 css */
+.css-1omp2b7.Mui-selected{
+     background-color : #9a8c81 !important;
+ }
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ병처르ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+/* 버튼 */
+.sinfobtn , .sregistbtn , .staabtn , .ssalary{
+    width: 200px;
+    height : 100px;
+    cursor: pointer;
+    outline: none;
+    font-size : 32px;
+    border : none;
+    background-color: #e6e6e7;
+}
+
+.stab{
+    background-color: #f9f9f9;
+    color: black;
+    border : none;
+    height :100px;
+    font-weight : bold;
+    border-radius : 15px 15px 0 0 ;
+}
